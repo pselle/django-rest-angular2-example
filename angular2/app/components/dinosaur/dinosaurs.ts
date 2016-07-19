@@ -4,7 +4,6 @@ import { DinosaurService } from '../../services/DinosaurService'
 @Component({
   selector: 'dinosaurs',
   template: `<ul><li *ngFor="let dino of dinos">{{dino.species}}</li></ul>`
-  directives: []
 })
 export class DinosaurComponent implements OnInit {
   dinos: any[];
