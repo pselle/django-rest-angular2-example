@@ -14,12 +14,12 @@ require('rxjs/add/operator/toPromise');
 var DinosaurService = (function () {
     function DinosaurService(http) {
         this.http = http;
-        this.apiURL = 'http://localhost:8000/dinos';
+        this.apiURL = 'http://localhost:8000/dinosaurs';
     }
     DinosaurService.prototype.getDinos = function () {
         return this.http.get(this.apiURL)
             .toPromise()
-            .then(function (response) { return response.json().data; })
+            .then(function (response) { return response.json(); })
             .catch(this.handleError);
     };
     DinosaurService.prototype.handleError = function (error) {

@@ -2,17 +2,17 @@ import { Component, OnInit } from '@angular/core';
 import { DinosaurService } from '../../services/DinosaurService'
 
 @Component({
-  selector: 'dinosaur',
-  template: `Hello<ul>
-              <li *ngFor="let dino of dinos">{{ dino.species }}</li>
-             </ul>`
+  selector: 'dinosaurs',
+  template: `<ul><li *ngFor="let dino of dinos">{{dino.species}}</li></ul>`
+  directives: []
 })
 export class DinosaurComponent implements OnInit {
   dinos: any[];
   error: any;
 
   constructor(private dinosaurService: DinosaurService) { }
-  getHeroes() {
+
+  getDinos() {
     this.dinosaurService
         .getDinos()
         .then(dinos => this.dinos = dinos)
@@ -20,6 +20,6 @@ export class DinosaurComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.getHeroes();
+    this.getDinos();
   }
 }

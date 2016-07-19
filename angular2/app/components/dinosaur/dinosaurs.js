@@ -14,7 +14,7 @@ var DinosaurComponent = (function () {
     function DinosaurComponent(dinosaurService) {
         this.dinosaurService = dinosaurService;
     }
-    DinosaurComponent.prototype.getHeroes = function () {
+    DinosaurComponent.prototype.getDinos = function () {
         var _this = this;
         this.dinosaurService
             .getDinos()
@@ -22,16 +22,17 @@ var DinosaurComponent = (function () {
             .catch(function (error) { return _this.error = error; });
     };
     DinosaurComponent.prototype.ngOnInit = function () {
-        this.getHeroes();
+        this.getDinos();
     };
     DinosaurComponent = __decorate([
         core_1.Component({
-            selector: 'dinosaur',
-            template: "Hello<ul>\n              <li *ngFor=\"let dino of dinos\">{{ dino.species }}</li>\n             </ul>"
+            selector: 'dinosaurs',
+            template: "<ul><li *ngFor=\"let dino of dinos\">{{dino.species}}</li></ul>",
+            directives: []
         }), 
         __metadata('design:paramtypes', [DinosaurService_1.DinosaurService])
     ], DinosaurComponent);
     return DinosaurComponent;
 }());
 exports.DinosaurComponent = DinosaurComponent;
-//# sourceMappingURL=dinosaur.js.map
+//# sourceMappingURL=dinosaurs.js.map

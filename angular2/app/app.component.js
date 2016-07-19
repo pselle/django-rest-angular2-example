@@ -9,6 +9,8 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
+var dinosaurs_1 = require('./components/dinosaur/dinosaurs');
+var DinosaurService_1 = require('./services/DinosaurService');
 var AppComponent = (function () {
     function AppComponent() {
         this.name = 'World';
@@ -18,7 +20,9 @@ var AppComponent = (function () {
     AppComponent = __decorate([
         core_1.Component({
             selector: 'my-app',
-            template: '<h1>Hello {{name}}<span *ngIf="itIsJuly">, DjangoCon</span>!</h1>',
+            template: "<h1>Hello {{name}}<span *ngIf=\"itIsJuly\">, DjangoCon</span>!</h1>\n              <dinosaurs></dinosaurs>",
+            directives: [dinosaurs_1.DinosaurComponent],
+            providers: [DinosaurService_1.DinosaurService]
         }), 
         __metadata('design:paramtypes', [])
     ], AppComponent);
