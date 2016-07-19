@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { DinosaurService } from '../../services/DinosaurService'
+import { DinosaurService } from '../../services/dinosaurService'
 
 @Component({
   selector: 'dinosaurs',

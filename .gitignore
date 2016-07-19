@@ -5,3 +5,5 @@ env
 db.sqlite3
 node_modules
 .DS_Store
+*.map
+*.js

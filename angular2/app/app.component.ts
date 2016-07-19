@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { DinosaurComponent } from './components/dinosaur/dinosaurs'
-import { DinosaurService } from './services/DinosaurService'
+import { DinosaurService } from './services/dinosaurService'
 
 @Component({
   selector: 'my-app',
