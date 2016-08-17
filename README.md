@@ -6,6 +6,7 @@ Set up the Django app:
 - `pip install -r requirements.txt`
 - `cd exampleapp`
 - `python manage.py migrate`
+- `python manage.py loaddata sample-dinosaurs.json`
 - `python manage.py runserver`
 
 Set up Angular app:
