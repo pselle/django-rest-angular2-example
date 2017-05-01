@@ -1,16 +1,23 @@
 # Angular 2 and Django REST Framework
 
-Set up the Django app:
+Install dependencies and run migrations to set up the app:
 
 - Create a virtualenv
-- `pip install -r requirements.txt`
-- `cd exampleapp`
-- `python manage.py migrate`
-- `python manage.py loaddata sample-dinosaurs.json`
-- `python manage.py runserver`
+- Run `./build-app.sh`
 
-Set up Angular app:
+_Note: if you are unsure of how to build a virtualenv, uncomment the lines
+in the install script that will do it for you._
 
-- `cd angular2`
-- `npm install`
-- `npm start`
+Run the app:
+
+Run the REST server:
+
+```
+# in the exampleapp folder
+python manage.py runserver
+```
+
+```
+# in the angular2 folder
+npm start
+```
