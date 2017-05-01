@@ -1,5 +1,7 @@
 # Angular 2 and Django REST Framework
 
+## Setup
+
 Install dependencies and run migrations to set up the app:
 
 - Create a virtualenv
