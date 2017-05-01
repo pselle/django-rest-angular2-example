@@ -1,5 +1,8 @@
 # Angular 2 and Django REST Framework
 
+A simple example application where an Angular2 app talks to an API running
+Django REST framework.
+
 ## Setup
 
 Install dependencies and run migrations to set up the app:
