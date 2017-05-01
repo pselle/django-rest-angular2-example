@@ -1,6 +1,6 @@
 # Angular 2 and Django REST Framework
 
-A simple example application where an Angular2 app talks to an API running
+A simple example application where an Angular 2 app talks to an API running
 Django REST framework.
 
 ## Setup
@@ -22,7 +22,7 @@ Run the REST server:
 python manage.py runserver
 ```
 
-Start the Angular2 app:
+Start the Angular 2 app:
 
 ```
 # in the angular2 folder

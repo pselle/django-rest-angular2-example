@@ -8,6 +8,6 @@ cd exampleapp
 python manage.py migrate
 python manage.py loaddata sample-dinosaurs.json
 
-# Install angular2 dependencies
+# Install Angular 2 dependencies
 cd ../angular2
 npm install
