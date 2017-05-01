@@ -1,5 +1,4 @@
-# Uncomment the following lines if you want the script to set up your
-# virtualenv for you:
+# Uncomment the following lines if you want the script to set up your virtualenv for you:
 # virtualenv env
 # source virtualenv/bin/activate
 
